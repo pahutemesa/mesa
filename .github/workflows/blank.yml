@@ -1,6 +1,3 @@
-- name: Attest Build Provenance
-  uses: actions/attest-build-provenance@v3.1.0# This is a basic workflow to help you get started with Actions
-
 name: CI
 permissions:
   contents: read
@@ -37,3 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+          - name: Attest Build Provenance
+  uses: actions/attest-build-provenance@v3.1.0# This is a basic workflow to help you get started with Actions
